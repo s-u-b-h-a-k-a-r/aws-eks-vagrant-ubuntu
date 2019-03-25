@@ -97,7 +97,7 @@ aws-eks-ubuntu  |100.10.10.109|Ubuntu 18.04|2G|2|
 
 From ***local*** system execute the below commands
 * `$ ssh -L 8001:localhost:8001 vagrant@100.10.10.109` [***password : vagrant***]
-* `$ sudo su
+* `$ sudo su`
 
 Use the below command to generate ***access token*** login to ***Dashboard***
 * `$ kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep eks-admin | awk '{print $1}')`
