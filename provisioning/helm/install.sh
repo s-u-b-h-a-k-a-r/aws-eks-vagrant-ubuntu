@@ -9,3 +9,4 @@ chmod +x get_helm.sh
 
 cp  /usr/local/bin/helm /home/vagrant/bin/helm
 cp  /usr/local/bin/tiller /home/vagrant/bin/tiller
+helm init --client-only
