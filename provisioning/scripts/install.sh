@@ -14,6 +14,11 @@ apt-get install unzip   > /dev/null 2>&1
 apt-get install systemd > /dev/null 2>&1
 apt-get install jq      > /dev/null 2>&1
 
+snap install yq      > /dev/null 2>&1
+
+figlet DOCKER
+apt-get install docker.io      > /dev/null 2>&1
+
 
 figlet SSH
 sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config

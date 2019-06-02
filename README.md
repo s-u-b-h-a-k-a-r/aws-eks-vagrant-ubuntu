@@ -64,7 +64,7 @@ aws-eks-ubuntu  |100.10.10.109|Ubuntu 18.04|2G|2|
 
 * `$ cd aws-eks-vagrant-ubuntu/provisioning`
 * `$ vagrant ssh aws-eks-ubuntu`
-* `$ sudo su`
+
 
 **Provide AWS Credentials**
 
