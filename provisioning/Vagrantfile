@@ -17,10 +17,11 @@ Vagrant.configure(2) do |config|
       v.memory = settings["VM"]["memory"]
     end
      client.vm.provision "shell", path: "eksctl/install.sh"
-     client.vm.provision "shell", path: "kubectl/install.sh"
-	 client.vm.provision "shell", path: "terraform/install.sh"
-     client.vm.provision "shell", path: "aws-iam-authenticator/install.sh"
+     client.vm.provision "shell", path: "kubectl/install.sh",:args => [settings["kubectl"]["version"]]
+     client.vm.provision "shell", path: "terraform/install.sh",:args => [settings["terraform"]["version"]]
+     client.vm.provision "shell", path: "aws-iam-authenticator/install.sh",:args => [settings["aws-iam-authenticator"]["version"]]
      client.vm.provision "shell", path: "awscli/install.sh"
      client.vm.provision "shell", path: "helm/install.sh"
  end
  end
+ 
